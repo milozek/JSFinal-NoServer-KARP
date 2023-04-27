@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Professional Services for Improving the Mind</title>
+    <script src="../scripts/index.js" defer></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">
+          PSYCHE
+          <img src="../assets/img/leaf.png" alt="leaf" />
+          <br />Regeneration
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a id="courses" class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Courses
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="#">Guidance</a>
+                <a class="dropdown-item" href="#">Counseling</a>
+                <a class="dropdown-item" href="#">Advanced Therapy</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <form class="form-inline">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="..."
+            aria-label="Search"
+          />
+          <button
+            class="btn btn-outline-success my-2 my-sm-0"
+            type="submit"
+            style="
+              background: lightblue;
+              border: none;
+              margin: 0.5em;
+              border-radius: 10%;
+              padding: 0.5em;
+            "
+          >
+            Search
+          </button>
+        </form>
+      </nav>
+    </header>
+    <main>
+      <div class="form-container">
+        <form class="form-grid" id="loginForm">
+          <div class="form-group">
+            <label for="name">Name *</label>
+            <input type="text" class="form-control" id="inputName" required />
+          </div>
+          <div class="form-group">
+            <label for="lastname">Lastname *</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputLastname"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="gender">Gender *</label>
+            <select class="form-control" id="inputGender" required>
+              <option value="">Select gender</option>
+              <option value="M">Male</option>
+              <option value="F">Female</option>
+              <option value="NB">Non-Binary</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="dob">Day of Birth *</label>
+            <input type="date" class="form-control" id="inputDob" required />
+          </div>
+          <div class="form-group">
+            <label for="nationality">Nationality *</label>
+            <select class="form-control" id="inputNationality" required>
+              <option value="">Select nationality</option>
+              <option value="ARG">Argentina</option>
+              <option value="SPA">Spain</option>
+              <option value="MEX">Mexico</option>
+              <option value="CHI">Chile</option>
+              <option value="URU">Uruguay</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="residence">Place of Residence *</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputResidence"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="phone">Celphone *</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <select
+                  class="form-control"
+                  style="width: 4em; margin-right: 10px"
+                  id="internationalCountryCode"
+                  required
+                >
+                  <option value="">Select country code</option>
+                  <option value="+54 9">AR(+54)</option>
+                  <option value="+34 9">SP(+34)</option>
+                  <option value="+52 9">ME(+52)</option>
+                  <option value="+56 9">CH(+56)</option>
+                  <option value="+598 9">UR(+598)</option>
+                </select>
+              </div>
+              <input type="tel" class="form-control" id="inputPhone" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" class="form-control" id="inputEmail" required />
+          </div>
+          <div class="form-group">
+            <label for="service">Service *</label>
+            <select class="form-control" id="inputService" required>
+              <option value="">Select service</option>
+              <option value="Guidance">Guidance</option>
+              <option value="Counseling">Counseling</option>
+              <option value="Advanced Therapy">Advanced Therapy</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="start">Starting month *</label>
+            <select class="form-control" id="inputStart" required>
+              <option value="">Select starting month</option>
+              <option value="January">January</option>
+              <option value="February">February</option>
+              <option value="March">March</option>
+              <option value="April">April</option>
+              <option value="May">May</option>
+              <option value="June">June</option>
+              <option value="July">July</option>
+              <option value="August">August</option>
+              <option value="September">September</option>
+              <option value="October">October</option>
+              <option value="November">November</option>
+              <option value="December">December</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary add-btn" id="addBtn">
+            Submit
+          </button>
+        </form>
+        <div class="row my-3">
+          <div class="col-3">
+            <select class="form-select" id="serviceSelect">
+              <option selected>Select a service</option>
+              <option value="Guidance">Guidance</option>
+              <option value="Counseling">Counseling</option>
+              <option value="Advanced Therapy">Advanced Therapy</option>
+            </select>
+          </div>
+          <div class="col-3">
+            <select class="form-select" id="monthSelect">
+              <option selected>Select a starting month</option>
+              <option value="January">January</option>
+              <option value="February">February</option>
+              <option value="March">March</option>
+              <option value="April">April</option>
+              <option value="May">May</option>
+              <option value="June">June</option>
+              <option value="July">July</option>
+              <option value="August">August</option>
+              <option value="September">September</option>
+              <option value="October">October</option>
+              <option value="November">November</option>
+              <option value="December">December</option>
+            </select>
+          </div>
+          <div class="col-6">
+            <button class="btn btn-primary" id="filterBtn">Filter</button>
+          </div>
+        </div>
+      </div>
+
+      <div><button id="paymentBtn">Pay</button></div>
+
+      <table class="table caption-top" style="color: aliceblue">
+        <caption style="color: aliceblue">
+          List of users
+        </caption>
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Fullname</th>
+            <th scope="col">Celphone</th>
+            <th scope="col">Nationality</th>
+            <th scope="col">Service</th>
+            <th scope="col">Starting month</th>
+          </tr>
+        </thead>
+        <tbody id="userTableBody" style="color: aliceblue"></tbody>
+      </table>
+
+      <p class="collapse-btns">
+        <a
+          class="btn btn-primary about-btn"
+          data-bs-toggle="collapse"
+          href="#multiCollapseExample1"
+          role="button"
+          aria-expanded="false"
+          aria-controls="multiCollapseExample1"
+          >Guidance</a
+        >
+        <button
+          class="btn btn-primary about-btn"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#multiCollapseExample2"
+          aria-expanded="false"
+          aria-controls="multiCollapseExample2"
+        >
+          Counseling
+        </button>
+        <button
+          class="btn btn-primary about-btn"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target=".multi-collapse"
+          aria-expanded="false"
+          aria-controls="multiCollapseExample1 multiCollapseExample2"
+        >
+          Advanced Therapy
+        </button>
+      </p>
+      <div class="row">
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample1">
+            <div class="card card-body">
+              We get to guide you in whatever personal or professional project
+              you're aiming to achieve.
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample2">
+            <div class="card card-body">
+              We provide you with a professional counseling service so you are
+              able to focus on succesful decisions. If you'd like to get the
+              Guidance service in addition to Counseling, then we'll call it
+              Advanced Therapy
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <section class="contact">
+        <p>Contact us</p>
+        <input type="text" placeholder="Write here" /><button
+          style="border: solid rgb(80, 193, 231) 2px; border-radius: 20%"
+        >
+          <img src="../assets/img/search.svg" alt="contact" />
+        </button>
+      </section>
+
+      <section class="social-media">
+        <a href="https://www.instagram.com/" target="_blank"
+          ><img src="../assets/img/instagram1.png" alt="instagram"
+        /></a>
+
+        <a href="https://www.facebook.com/" target="_blank"
+          ><img src="../assets/img/facebook.png" alt="facebook"
+        /></a>
+
+        <a href="https://twitter.com/" target="_blank"
+          ><img src="../assets/img/twitter.png" alt="twitter"
+        /></a>
+
+        <a href="https://www.twitch.tv/" target="_blank"
+          ><img src="../assets/img/twitch.png" alt="twitch"
+        /></a>
+      </section>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert@2"></script>
+  </body>
+</html>
